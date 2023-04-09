@@ -49,8 +49,7 @@ theme = 'hugo-theme-shell'
   description = """
 
 # Zander Havgaard
-
----
+-----------------
 
 * I'm a DevOps & Cloud Native consultant
 with @eficode in Copenhagen 🏙
@@ -66,9 +65,7 @@ Containerization, FaaS, Serverless etc. ☁
 * I'm a big fan of FOSS, Linux,
 tiling WMs and NeoVim ❤
 
----
-
-## Getting in touch
+## Getting in Touch
 
 I don't use social media, so the
 best way to reach me is to send an
