@@ -31,4 +31,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64,linux/arm/v7
-          tags: ghcr.io/zanderhavgaard/pzh.dk:release
+          tags: ghcr.io/zanderhavgaard/zanders.cloud:release
