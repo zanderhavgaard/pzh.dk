@@ -2,6 +2,15 @@
 version: "3"
 
 tasks:
+  submodule-init:
+    cmds:
+      - git submodule update --init --recursive
+
+  serve:
+    cmds:
+      - zola serve
+      - firefox "http://localhost:8080"
+
   build-docker:
     cmds:
       - docker build -t "zanders.cloud:local" .
