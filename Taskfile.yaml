@@ -1,0 +1,15 @@
+---
+version: "3"
+
+tasks:
+  build-docker:
+    cmds:
+      - docker build -t "zanders.cloud:local" .
+
+  run-docker-local:
+    cmds:
+      - docker run --rm -it -p 8080:80 -t "zanders.cloud:local"
+
+  run-docker-local-shell:
+    cmds:
+      - docker run --rm -it --entrypoint sh "zanders.cloud:local"

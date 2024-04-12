@@ -1,9 +1,9 @@
-FROM klakegg/hugo:ext-alpine as builder
+FROM ghcr.io/getzola/zola:v0.18.0 as zola
 
-COPY . /src
+COPY . /project
+WORKDIR /project
+RUN ["zola", "build"]
 
-RUN hugo
-
-FROM nginx:stable-alpine
-
-COPY --from=builder /src/public /usr/share/nginx/html
+FROM ghcr.io/static-web-server/static-web-server:2
+WORKDIR /
+COPY --from=zola /project/public /public
